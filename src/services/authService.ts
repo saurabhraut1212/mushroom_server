@@ -71,7 +71,11 @@ const loginUser = async (userData: UserRegistrationData): Promise<{ user: Omit<U
     }
 };
 
+
+
+
 export default {
     registerUser,   
     loginUser
+  
 };

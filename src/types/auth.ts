@@ -12,3 +12,7 @@ export interface UserRegistrationData{
     email:string;
     password:string;
 }
+export interface JwtVerifyPayload{
+    token:string,
+    jwtSecret:string
+}

@@ -31,18 +31,7 @@ const login: IController = async(req:Request, res:Response) => {
     }
 }
 
-// const logout: IController = async(req:Request, res:Response) => {
-//     try {
-//         const data=await authService.logoutUser(req.body);
-//         if(data instanceof Error) {
-//             return ApiResponse.error(res,httpStatusCode.BAD_REQUEST);
-//         }
-//         return ApiResponse.result(res, data, httpStatusCode.OK);
-//     } catch (error) {
-//         ApiResponse.error(res, httpStatusCode.INTERNAL_SERVER_ERROR, (error as Error).message);
-//         return;   
-//     }
-// }
+
 
 export default {
     register,   
