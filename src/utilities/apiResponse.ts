@@ -4,7 +4,7 @@ import httpStatusCodes from 'http-status-codes';
 export default class ApiResponse {
     static result = (
         res: Response,
-        result: object,
+        result: object | null,
         status: number = 200,
     ) => {
         res.status(status);
