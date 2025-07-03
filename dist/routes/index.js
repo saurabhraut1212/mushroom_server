@@ -9,10 +9,12 @@ const rawMaterialRoutes_1 = __importDefault(require("./rawMaterialRoutes/rawMate
 const bagsRoutes_1 = __importDefault(require("./bagsRoutes/bagsRoutes"));
 const labourRoutes_1 = __importDefault(require("./labourRoutes/labourRoutes"));
 const salesRoutes_1 = __importDefault(require("./salesRoutes/salesRoutes"));
+const spawnRoutes_1 = __importDefault(require("./spawnRoutes/spawnRoutes"));
 const router = express_1.default.Router();
 router.use("/auth", authRoutes_1.default);
 router.use("/rawMaterial", rawMaterialRoutes_1.default);
 router.use("/bags", bagsRoutes_1.default);
 router.use("/labours", labourRoutes_1.default);
 router.use("/sales", salesRoutes_1.default);
+router.use("/spawn", spawnRoutes_1.default);
 exports.default = router;
