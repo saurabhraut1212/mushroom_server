@@ -5,6 +5,7 @@ import bagsRoutes from "./bagsRoutes/bagsRoutes";
 import labourRoutes from './labourRoutes/labourRoutes';
 import salesRoutes from './salesRoutes/salesRoutes';
 import spawnRoutes from './spawnRoutes/spawnRoutes';
+import harvestRoutes from './harvestRoutes/harvestRoutes'; 
 
 
 
@@ -15,6 +16,7 @@ router.use("/rawMaterial",rawMaterialRoutes);
 router.use("/bags",bagsRoutes);
 router.use("/labours",labourRoutes);
 router.use("/sales",salesRoutes);
-router.use("/spawn",spawnRoutes)
+router.use("/spawn",spawnRoutes);
+router.use("/harvest", harvestRoutes); 
 
 export default router;
